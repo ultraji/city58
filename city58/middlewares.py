@@ -129,7 +129,7 @@ class City58ProxyMiddleware(object):
         if request.url.find('callback') != -1 or request.url.find('errordef') != -1 or request.url.find(
                 'verifycode') != -1 or request.url.find('antibot') != -1:
             try:
-                time.sleep(20)
+                time.sleep(2)
                 redirect_urls = request.meta.get("redirect_urls")[0]
                 if redirect_urls:
                     request._set_url(redirect_urls)
