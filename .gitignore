@@ -1,0 +1,6 @@
+.idea
+.scrapy
+venv
+city58/__pycache__
+city58/spiders/__pycache__
+city58/utils/__pycache__
